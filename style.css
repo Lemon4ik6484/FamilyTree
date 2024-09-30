@@ -1,0 +1,126 @@
+body{
+    background-color: wheat;
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::selection {
+    color: black;
+    background-color: coral;
+}
+
+#fileForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fileInput { 
+    display: none;
+}
+
+#file-upload {
+    border: 3px dashed #000000;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    top: 45%;
+    align-content: center;
+    justify-content: center;
+    transition: 0.3s;
+    font-size: large;
+    background: radial-gradient(circle, khaki 15%, wheat 50%);
+}
+
+#file-upload:hover{
+    top: 40%;
+    width: 35%;
+    height: 30%;
+    font-size: larger;
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+.MainTree {
+    display: flex;
+    flex-direction: column;
+}
+
+.gen {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.couple {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    
+}
+
+.couple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    right: 25px;
+    height: 2px;
+    background: black;
+    z-index: -1;
+}
+
+.person {
+    margin: 25px;
+    border: 3px solid #000000;
+    height: 175px;
+    width: 100px;
+    background-color: bisque;
+}
+
+.person.Female {
+    border-radius: 25px;
+}
+
+.photo {
+    height: 100px;
+    width: 100px;
+    border-bottom: 3px solid black;
+}
+
+.Female .photo {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.description {
+    margin: 5px;
+    position: absolute;
+    bottom: 35px;
+}
+
+.hiden {
+    display: none !important;
+}
+
+.closeButton {
+    border: 3px solid black;
+    border-radius: 25%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 5px;
+}

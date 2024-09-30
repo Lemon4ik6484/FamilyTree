@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+
+    <!--OpenGraphProtocol-->
+    <meta content="Family Tree" property="og:title"/>
+    <meta content="generator" property="og:description"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta content="#D3FFCE" data-react-helmet="true" name="theme-color"/>
+</head>
+<body>
+    <form id="fileForm">
+        <label for="fileInput" id="file-upload">
+            <div class="center"><strong id="upload-text">Upload your tree file here</strong></div>
+        </label>
+        <input type="file" id="fileInput" accept=".tree"/>
+    </form>
+
+    <div id="MainTree"></div>
+</body>
+</html>
